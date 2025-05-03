@@ -1,0 +1,32 @@
+STLC>>
+-------------------------------------------------------
+>1.Requirement Analysis >
+>2.Test Planning >
+>3.Test Case Development>
+>4.Test Environment Setup>
+>5. Test Execution
+>6. Test Closure
+-----------------------------------------------------------
+
+-----------------------------------------------
+@Test: Works as main method
+-> Single class we can write multiple @Test annotation
+
+@BeforeMethod: invoke before @Test method
+@AfterMethod: invoke after @Test method
+Both will execute for each test methods
+
+@BeforeClass and @AfterClass: it will execute only once for each @BeforeMethod and @AfterMethod or for entire test class
+
+
+heirarchy
+@BeforeClass
+    @BeforeMethod
+        @Test
+    @AfterMethod
+    @BeforeMethod
+        @Test
+    @AfterMethod
+@AfterClass
+
+Assertions: Used to validate test method by passing certain assertion condition
